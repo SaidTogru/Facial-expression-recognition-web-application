@@ -10,7 +10,7 @@ https://arxiv.org/pdf/1902.01019v1.pdf </br>
 
 https://arxiv.org/pdf/2109.07270v4.pdf</br>
 
-https://openaccess.thecvf.com/content/WACV2021/papers/Farzaneh_Facial_Expression_Recognition_in_the_Wild_via_Deep_Attentive_Center_WACV_2021_paper.pdf</br> </br>
+https://openaccess.thecvf.com/content/WACV2021/papers/Farzaneh_Facial_Expression_Recognition_in_the_Wild_via_Deep_Attentive_Center_WACV_2021_paper.pdf</br>
 
 The fourth model "BasicNet" was developed by myself and was also trained on the self-developed database GoogleCC0. For this purpose, a relatively simple CNN architecture was designed to investigate whether the presented complex architectures perform significantly better in the evaluation process. </br></br> ![BasicNet](https://user-images.githubusercontent.com/65668541/174686382-69b7001f-5d90-4f12-aa4b-a7a4153e20b0.png)
 </br></br>
