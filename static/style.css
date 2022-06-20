@@ -1,64 +1,51 @@
-body,
-html {
+body, html {
   margin: 0;
   height: 100%;
   overflow: hidden;
   background-color: black;
   color: white;
 }
-
-
 #stream {
   position: absolute;
   width: 60vw;
   height: 70vh;
   background-color: white;
 }
-
 #architecture {
   position: absolute;
   width: 60vw;
   height: 70vh;
 }
-
 #chart {
   position: absolute;
   width: 40vw;
   height: 50vh;
   margin-left: 60vw;
 }
-
-
 .flip-card {
   position: absolute;
   width: 60vw;
   height: 75vh;
 }
-
 .flip-card-inner {
   width: 100%;
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
-
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-.flip-card-front,
-.flip-card-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-
 .flip-card-back {
   transform: rotateY(180deg);
 }
-
 #webcamframe{
   display:none;
 }
@@ -70,8 +57,6 @@ html {
   left: 2vw;
   margin-top: 6vh;
 }
-
-
 #currentmodel {
   position: absolute;
   font-size: 1.5vw;
@@ -83,7 +68,6 @@ html {
 #pause {
   display: none;
 }
-
 #pause:checked ~ .icon {
   width: 16px;
   height: 48px;
@@ -92,7 +76,6 @@ html {
   border-top: 0px solid transparent;
   border-bottom: 0px solid transparent;
 }
-
 .icon {
   position: absolute;
   margin: auto;
@@ -114,8 +97,6 @@ html {
   left: 60vw;
   top: 50vh;
 }
-
-
 #nextdiv a{
   top: 7.5vh;
   display: block;
@@ -132,12 +113,10 @@ html {
   position: relative;
   transition: all .35s;
 }
-
 #nextdiv a span{
   position: relative;
   z-index: 2;
 }
-
 #nextdiv a:after{
   position: absolute;
   content: "";
@@ -148,11 +127,9 @@ html {
   background: #ffffff;
   transition: all .35s;
 }
-
 #nextdiv a:hover{
   color: rgb(0, 0, 0);
 }
-
 #nextdiv a:hover:after{
   width: 100%;
 }
@@ -163,7 +140,6 @@ html {
   left: 70vw;
   top: 50vh;
 }
-
 .switch-button {
   left:-2vw;
   top: 7.5vh;
@@ -225,7 +201,6 @@ html {
   transform: translateX(0);
   transition: transform 300ms;
 }
-
 .switch-button-label span{
   line-height: 4.5vh;
   display: inline-block;
@@ -235,7 +210,6 @@ html {
   position: relative;
   left:1.2vw;
 }
-
 #webcamdiv {
   position: absolute;
   width: 10vw;
@@ -243,7 +217,6 @@ html {
   left: 80vw;
   top: 50vh;
 }
-
 #info{
   top: 7.5vh;
   display: block;
@@ -257,11 +230,16 @@ html {
   border: 2px solid rgb(255, 255, 255);
   position: absolute;
   transition: all .35s;
-  background: transparent; 
+  background: transparent;
   overflow: hidden;
 }
-#info:hover{cursor: pointer}
-#info:hover:before{opacity: 1; transform: translate(0,0);}
+#info:hover{
+ cursor: pointer
+}
+#info:hover:before{
+ opacity: 1;
+  transform: translate(0,0);
+}
 #info:before{
   content: attr(data-hover);
   position: absolute;
@@ -271,11 +249,13 @@ html {
   transform: translate(-100%,0);
   transition: all .3s ease-in-out;
 }
-  #info:hover div{opacity: 0; transform: translate(100%,0);}
-  #info div{
-    transition: all .3s ease-in-out;
-  }
-
+#info:hover div{
+ opacity: 0;
+  transform: translate(100%,0);
+}
+#info div{
+  transition: all .3s ease-in-out;
+}
 #infodiv {
   position: absolute;
   width: 10vw;
@@ -283,48 +263,46 @@ html {
   left: 90vw;
   top: 50vh;
 }
-
 @import url("https://fonts.googleapis.com/css?family=Roboto:100");
-
 @-webkit-keyframes ani {
   from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+ }
   to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+ }
 }
 @keyframes ani {
   from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+ }
   to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+ }
 }
 @-webkit-keyframes ani2 {
   from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+ }
   to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+ }
 }
 @keyframes ani2 {
   from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+ }
   to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+ }
 }
 .card-font {
   font-family: "Roboto", sans-serif;
@@ -341,7 +319,6 @@ html {
   background-color: #ffa850;
   border: 0px;
 }
-
 #btn2 {
   position: absolute;
   margin-top: 70vh;
@@ -351,7 +328,6 @@ html {
   border: 0px;
   background-color: #ff6767;
 }
-
 #btn3 {
   position: absolute;
   margin-top: 70vh;
@@ -361,7 +337,6 @@ html {
   border: 0px;
   background-color: #a5d6ff;
 }
-
 #btn4 {
   position: absolute;
   margin-top: 70vh;
@@ -371,7 +346,6 @@ html {
   border: 0px;
   background-color: #5874dc;
 }
-
 .button-effect {
   overflow: hidden;
 }
@@ -390,7 +364,6 @@ html {
   -webkit-animation: ani 0.7s steps(70) forwards;
   animation: ani 0.7s steps(70) forwards;
 }
-
 #activate1 {
   position: absolute;
   margin-top: 77vh;
@@ -405,7 +378,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #github1 {
   position: absolute;
   margin-top: 83vh;
@@ -434,7 +406,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #activate2 {
   position: absolute;
   margin-top: 77vh;
@@ -449,7 +420,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #github2 {
   position: absolute;
   margin-top: 83vh;
@@ -464,7 +434,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #paper2 {
   position: absolute;
   margin-top: 89vh;
@@ -479,7 +448,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #activate3 {
   position: absolute;
   margin-top: 77vh;
@@ -494,7 +462,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #github3 {
   position: absolute;
   margin-top: 83vh;
@@ -523,7 +490,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #activate4 {
   position: absolute;
   margin-top: 77vh;
@@ -538,7 +504,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #github4 {
   position: absolute;
   margin-top: 83vh;
@@ -553,7 +518,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #paper4 {
   position: absolute;
   margin-top: 89vh;
@@ -568,7 +532,6 @@ html {
   letter-spacing: 0.1vw;
   border: none;
 }
-
 #cover {
   display: none;
   position: fixed;
@@ -579,7 +542,6 @@ html {
   background: rgba(0, 0, 0, 0.8);
   z-index: 10;
 }
-
 .cover-infobox {
   font-family: "Roboto", sans-serif;
   font-size: 1vw;
@@ -591,7 +553,6 @@ html {
   z-index: 10;
 }
 /*INFO CLOSEBUTTON*/
-
 #close-infobox {
   margin-top: 2vh;
   margin-left: 20vw;
@@ -611,7 +572,6 @@ html {
   background: black;
   color: white;
 }
-
 /*LINKS IN INFOBOX*/
 .link1 a {
   text-decoration: none;
@@ -622,11 +582,9 @@ html {
   transition: background-color 0.4s ease-out;
   border-bottom: 0.2em solid #ccc;
 }
-
 .link1 a:hover {
   background-color: #ccc;
 }
-
 .link2 a {
   text-decoration: none;
   color: inherit;
@@ -636,112 +594,102 @@ html {
   transition: background-color 0.25s ease-out;
   border-bottom: 0.2em solid #248dbf;
 }
-
 .link2 a:hover {
   background-color: #248dbf;
 }
-
 @media (min-width: 961px) {
   #main {
-    visibility: visible;
-  }
+      visibility: visible;
+ }
   #mobile {
-    display: None;
-  }
+      display: None;
+ }
   #loading {
-    display: block;
-  }
+      display: block;
+ }
 }
-
 @media (max-width: 961px) {
   #main {
-    visibility: hidden;
-  }
+      visibility: hidden;
+ }
   #mobile {
-    display: block;
-  }
+      display: block;
+ }
   #loading {
-    display: None;
-  }
+      display: None;
+ }
   @import url("https://fonts.googleapis.com/css?family=Montserrat:700");
-
   body {
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
-    text-align: center;
-    width: 100vw;
-    font-weight: 700;
-    overflow: hidden;
-    font-family: "Montserrat", sans-serif;
-  }
-
+      background-color: rgb(0, 0, 0);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+      text-align: center;
+      width: 100vw;
+      font-weight: 700;
+      overflow: hidden;
+      font-family: "Montserrat", sans-serif;
+ }
   #fly-in {
-    font-size: 3em;
-    margin: 40vh auto;
-    height: 20vh;
-    text-transform: uppercase;
-  }
-
+      font-size: 3em;
+      margin: 40vh auto;
+      height: 20vh;
+      text-transform: uppercase;
+ }
   #fly-in span {
-    display: block;
-    font-size: 0.4em;
-    opacity: 0.8;
-  }
-
+      display: block;
+      font-size: 0.4em;
+      opacity: 0.8;
+ }
   #fly-in div {
-    position: fixed;
-    top: 27vh;
-    margin: 0 auto;
-    opacity: 0;
-    left: 10vw;
-    width: 80vw;
-    animation: switch 6s linear infinite;
-  }
-
+      position: fixed;
+      top: 27vh;
+      margin: 0 auto;
+      opacity: 0;
+      left: 10vw;
+      width: 80vw;
+      animation: switch 6s linear infinite;
+ }
   #fly-in div:nth-child(1) {
-    animation-delay: 0.5s;
-  }
+      animation-delay: 0.5s;
+ }
   #fly-in div:nth-child(2) {
-    animation-delay: 3.5s;
-  }
-
+      animation-delay: 3.5s;
+ }
   @keyframes switch {
-    0% {
-      opacity: 0;
-      filter: blur(20px);
-      transform: scale(12);
-    }
-    10% {
-      opacity: 1;
-      filter: blur(0);
-      transform: scale(1);
-    }
-    50% {
-      opacity: 1;
-      filter: blur(0);
-      transform: scale(0.9);
-    }
-    57% {
-      opacity: 0;
-      filter: blur(10px);
-      transform: scale(0.1);
-    }
-    80% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+      0% {
+          opacity: 0;
+          filter: blur(20px);
+          transform: scale(12);
+     }
+      10% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(1);
+     }
+      50% {
+          opacity: 1;
+          filter: blur(0);
+          transform: scale(0.9);
+     }
+      57% {
+          opacity: 0;
+          filter: blur(10px);
+          transform: scale(0.1);
+     }
+      80% {
+          opacity: 0;
+     }
+      100% {
+          opacity: 0;
+     }
+ }
 }
 /* LOADING SCREEN*/
 #main {
   visibility: hidden;
 }
-
 .loading-title {
   color: #111;
   font-family: "Helvetica Neue", sans-serif;
@@ -774,7 +722,7 @@ html {
 }
 .boxes {
   height: 32px;
-  width: 32px; /*2vw 0.96875vw*/
+  width: 32px;
   position: relative;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -793,7 +741,6 @@ html {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-
 .boxes .box:nth-child(1) {
   -webkit-transform: translate(100%, 0);
   transform: translate(100%, 0);
@@ -818,7 +765,6 @@ html {
   -webkit-animation: box4 1s linear infinite;
   animation: box4 1s linear infinite;
 }
-
 .boxes .box > div {
   background: #5c8df6;
   --translateZ: 15.5px;
@@ -832,12 +778,9 @@ html {
   right: auto;
   bottom: auto;
   left: auto;
-  -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX))
-    translateZ(var(--translateZ));
-  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX))
-    translateZ(var(--translateZ));
+  -webkit-transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
+  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
 }
-
 .boxes .box > div:nth-child(1) {
   top: 0;
   left: 0;
@@ -858,49 +801,43 @@ html {
   left: 0;
   --translateZ: -90px;
 }
-
 @keyframes box1 {
-  0%,
-  50% {
-    transform: translate(100%, 0);
-  }
+  0%, 50% {
+      transform: translate(100%, 0);
+ }
   100% {
-    transform: translate(200%, 0);
-  }
+      transform: translate(200%, 0);
+ }
 }
-
 @keyframes box2 {
   0% {
-    transform: translate(0, 100%);
-  }
+      transform: translate(0, 100%);
+ }
   50% {
-    transform: translate(0, 0);
-  }
+      transform: translate(0, 0);
+ }
   100% {
-    transform: translate(100%, 0);
-  }
+      transform: translate(100%, 0);
+ }
 }
-
 @keyframes box3 {
-  0%,
-  50% {
-    transform: translate(100%, 100%);
-  }
+  0%, 50% {
+      transform: translate(100%, 100%);
+ }
   100% {
-    transform: translate(0, 100%);
-  }
+      transform: translate(0, 100%);
+ }
 }
-
 @keyframes box4 {
   0% {
-    transform: translate(200%, 0);
-  }
+      transform: translate(200%, 0);
+ }
   50% {
-    transform: translate(200%, 100%);
-  }
+      transform: translate(200%, 100%);
+ }
   100% {
-    transform: translate(100%, 100%);
-  }
+      transform: translate(100%, 100%);
+ }
 }
 #stream-loading {
   display: none;
@@ -920,12 +857,10 @@ html {
   height: 250px;
   margin: auto;
 }
-
 #stream-loading .part {
   width: 250px;
   position: absolute;
 }
-
 #stream-loading .svgpath {
   fill: rgba(145, 220, 90, 0);
   stroke: rgb(255, 255, 255);
@@ -934,20 +869,17 @@ html {
   stroke-linecap: round;
   z-index: 2;
 }
-
 #stream-loading .svgbg {
   fill: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
 #playload {
   animation: dash 2.5s reverse ease-in-out infinite;
 }
-
 @keyframes dash {
   to {
-    stroke-dashoffset: 2000;
-  }
+      stroke-dashoffset: 2000;
+ }
 }
 /*CHART LOADING*/
 #chart-loading {
@@ -974,19 +906,16 @@ html {
 }
 @-webkit-keyframes pulse {
   to {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
+      transform: scale(0.8);
+      opacity: 0.7;
+ }
 }
 @keyframes pulse {
   to {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
+      transform: scale(0.8);
+      opacity: 0.7;
+ }
 }
-/*CHART LOADING*/
-/*pop up message*/
-
 .popup-wrap {
   color: black;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1003,7 +932,6 @@ html {
   content: "";
   background: rgba(0, 0, 0, 0.85);
 }
-
 .popup-box {
   width: 25vw;
   padding: 2vw;
@@ -1016,21 +944,16 @@ html {
   background: #fff;
   text-align: center;
 }
-
-.transform-in,
-.transform-out {
+.transform-in, .transform-out {
   display: block;
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
 }
-
 .transform-in {
   -webkit-transform: translate(-50%, -50%) scale(1);
   transform: translate(-50%, -50%) scale(1);
 }
-
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
-
 .btn {
   margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -1066,4 +989,3 @@ html {
   border: 1px solid black;
   background-color: rgba(255, 255, 255, 0.1);
 }
-/*pop up message*/
