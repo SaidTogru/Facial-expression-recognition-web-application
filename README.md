@@ -11,7 +11,7 @@ https://arxiv.org/pdf/1902.01019v1.pdf </br>
 https://arxiv.org/pdf/2109.07270v4.pdf</br>
 
 https://openaccess.thecvf.com/content/WACV2021/papers/Farzaneh_Facial_Expression_Recognition_in_the_Wild_via_Deep_Attentive_Center_WACV_2021_paper.pdf</br> </br>
-The fourth model "BasicNet" was developed by myself and was also trained on the self-developed database GoogleCC0. For this purpose, a relatively simple CNN architecture was designed to test whether the more complex architectures presented really perform significantly better in the evaluation process. </br></br> ![BasicNet](https://user-images.githubusercontent.com/65668541/174686382-69b7001f-5d90-4f12-aa4b-a7a4153e20b0.png)
+The fourth model "BasicNet" was developed by myself and was also trained on the self-developed database GoogleCC0. For this purpose, a relatively simple CNN architecture was designed to investigate whether the presented models, which represent complex architectures and possess a lot of parameters, actually perform significantly better in the evaluation process. </br></br> ![BasicNet](https://user-images.githubusercontent.com/65668541/174686382-69b7001f-5d90-4f12-aa4b-a7a4153e20b0.png)
 </br></br>
 The construction of this database was done by developing a web scraper that searches and collects images with the seven emotions (angry, disgust, fear, happy, neutral, sad, surprise) in Google royalty free on 109 languages: https://github.com/SaidTogru/Facial-expression-recognition-web-application/blob/main/useful/GoogleAutomation/collectGoogle.py </br>Some lines of code may need to be adapted due to the rapidly changing web components.
 
