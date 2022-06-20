@@ -1,6 +1,6 @@
 # Summary
 
-The following project was developed as part of my bachelor's thesis: www.google.com .The project implements, trains and evaluates the four best performing Convolutional Neural Networks architectures for the databases RAF-DB, AffectNet, FERG, GoogleCC0 (Google Images). For more information of different architectures and their accuracy ranking in the Facial Expression Recognition domain, see paperswithcode: https://paperswithcode.com/task/facial-expression-recognition
+The following project was developed as part of my bachelor's thesis: </br>www.google.com </br>The project implements, trains and evaluates the four best performing Convolutional Neural Networks architectures for the databases RAF-DB, AffectNet, FERG, GoogleCC0 (Google Images). For more information of different architectures and their accuracy ranking in the Facial Expression Recognition domain, see paperswithcode: https://paperswithcode.com/task/facial-expression-recognition
 
 # Databases
 
