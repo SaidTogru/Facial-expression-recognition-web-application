@@ -58,6 +58,7 @@ def google_scraper(emotion):
                 (By.XPATH, '//*[@id="yDmH0d"]/div[3]/c-wiz/div[2]/div[2]/c-wiz[1]/div/div/div[3]/div/a[2]/div/span'))).click()
         except:
             print("Please change XPATHs search filters, usage rights and Creative Commons buttons. From time to time, the XPATHS may change as Google also updates the searchengine web interface, albeit minimally.")
+            break
         time.sleep(1)
         i = 1
         while True:
