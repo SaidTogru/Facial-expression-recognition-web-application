@@ -55,7 +55,7 @@ face_mesh = mp_face_mesh.FaceMesh()
 score = torch.tensor(
     [[-0.9674,  1.9319, -1.7264, -2.9173, -0.5697,  2.3320, -1.4329]]).cuda()  # default
 transform = None
-with open("static/Images/error.jpeg", "rb") as image:
+with open("static/images/error.jpeg", "rb") as image:
     f = image.read()
     last_frame = bytes(f)
 with open("static/images/defaultframe.jpeg", "rb") as image:
