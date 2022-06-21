@@ -12,7 +12,6 @@ from training.DeepEmotion import DeepEmotion
 from training.BasicNet import BasicNet
 from training.DACL import DACL, BasicBlock
 from training.DAN import DAN
-from PIL import Image
 from matplotlib.figure import Figure
 import warnings
 import mediapipe as mp
@@ -114,11 +113,6 @@ def predict(img):
             return class_name
 
 
-@ app.route('/')
-def index():
-    return render_template('index.html')
-
-
 def redirect_plot():
     while True:
         if pause == "true":
@@ -152,12 +146,6 @@ def redirect_plot():
                 frame = bytes(f)
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
-
-
-@ app.route('/graph_plot')
-def graph_plot():
-    return Response(redirect_plot(),
-                    mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 def redirect_frame():
@@ -216,6 +204,11 @@ def redirect_frame():
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
 
+@ app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/get_frame', methods=['POST'])
 def get_image():
     global current_frame
@@ -229,6 +222,12 @@ def get_image():
 @ app.route('/video_feed')
 def video_feed():
     return Response(redirect_frame(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
+
+@ app.route('/graph_plot')
+def graph_plot():
+    return Response(redirect_plot(),
                     mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
