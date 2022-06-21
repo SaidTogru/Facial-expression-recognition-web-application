@@ -61,6 +61,8 @@ with open("static/images/error.jpeg", "rb") as image:
 with open("static/images/defaultframe.jpeg", "rb") as image:
     f = image.read()
     current_frame = bytes(f)
+frame_queue = []  # synchronizing graph plot and frame plot (delay)
+frame_queue.append(current_frame)
 
 
 def set_model(x):
@@ -153,6 +155,7 @@ def redirect_frame():
     global start
     global current_frame
     global last_frame
+    global frame_queue
     while True:
         if pause == "true":
             continue
@@ -197,7 +200,9 @@ def redirect_frame():
                                        2, (255, 255, 255), -1)
                 _, jpeg = cv2.imencode('.jpg', fr)
                 frame = jpeg.tobytes()
-                last_frame = frame
+                last_frame = frame  # exception handler frame
+                frame_queue.append(frame)  # queue
+                frame = frame_queue.pop(0)
             except Exception:
                 frame = last_frame
         yield (b'--frame\r\n'

@@ -132,7 +132,7 @@ $("#webcam").click(function(_callback) {
 
 $("#next").click(function() {
     if (stream_mode == "video") {
-        if (next == 5) {
+        if (next == 4) {
             next = 1
         } else {
             next++;
