@@ -88,6 +88,8 @@ set_model(current_model)
 def loadvideo(x):
     global videoname
     global video
+    global start
+    start = time.time()
     videoname = x
     if videoname != 0:
         video = cv2.VideoCapture(videoname)
@@ -165,7 +167,6 @@ def redirect_frame():
                     sleep = False
                     time.sleep(3)
                 if time.time()-start >= 28 and videoname != 0:
-                    start = time.time()
                     loadvideo(videoname)
                 if videoname == 0:
                     fr = current_frame
