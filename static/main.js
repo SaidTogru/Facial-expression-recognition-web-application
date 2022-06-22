@@ -182,7 +182,7 @@ function loadingStream(btn, time) {
             background: "-webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#000000))"
         });
     } else {
-        $("#stream-loading").css("background-color", window.getComputedStyle(document.getElementById(btn)).backgroundColor);
+        $("#stream-loading").css("background", window.getComputedStyle(document.getElementById(btn)).backgroundColor);
     }
     $("#chart-loading").css("display", "block")
     $("#chart").css("filter", "blur(10px)");
