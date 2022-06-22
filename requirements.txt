@@ -1,20 +1,22 @@
-pytorch
-selenium
-pandas
-numpy
-pillow
-torchvision
+deep_translator==1.8.3
+Flask==1.1.2
+matplotlib==3.5.2
+mediapipe==0.8.9.1
+numpy==1.22.3
+opencv_python==4.5.5.64
+pandas==1.2.1
+Pillow==9.1.1
+scikit_learn==1.1.1
+seaborn==0.11.2
+selenium==3.141.0
+tensorflow==2.7.0
+torch==1.6.0
+torchvision==0.7.0
 matplotlib==3.4.3
 split-folders
-opencv-python
-urllib3
-deep-translator
-scikit-learn
-random2
-time
 pickle
-flask
-seaborn
-mediapipe
+Jinja2==2.10
+Werkzeug
+
 
 

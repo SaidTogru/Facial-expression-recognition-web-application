@@ -53,7 +53,7 @@ sleep = True
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh()
 score = torch.tensor(
-    [[-0.9674,  1.9319, -1.7264, -2.9173, -0.5697,  2.3320, -1.4329]]).cpu()  # default
+    [[-0.9674,  1.9319, -1.7264, -2.9173, -0.5697,  2.3320, -1.4329]]).cuda()  # default
 transform = None
 with open("static/images/error.jpeg", "rb") as image:
     f = image.read()
@@ -70,7 +70,7 @@ def set_model(x):
     sleep = True
     model_setup = models[x]
     model = model_setup[0]
-    model.cpu()
+    model.cuda()
     model.eval()
     model_name = model_setup[1].split("_")[0]
     if model_name == "DAN":
@@ -91,8 +91,7 @@ def loadvideo(x):
     global start
     start = time.time()
     videoname = x
-    if videoname != 0:
-        video = cv2.VideoCapture(videoname)
+    video = cv2.VideoCapture(videoname)
 
 
 def predict(img):
@@ -101,7 +100,7 @@ def predict(img):
         img = Image.fromarray(img)
         img_normalized = transform(img).float()
         img_normalized = img_normalized.unsqueeze_(0)
-        #img_normalized = img_normalized.cuda()
+        img_normalized = img_normalized.cuda()
         with torch.no_grad():
             output = model(img_normalized)
             if model_name == "DACL":
