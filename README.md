@@ -27,6 +27,6 @@ FER2013: https://www.kaggle.com/c/challenges-in-representation-learning-facial-e
 
 # Client Server Application
 
-Furthermore, a client/server web application was developed and published for real-time usage with Flask. Here you can test the models yourself on video or webcam and view information about the respective architectures. The page can be reached under the following link: </br>
+Furthermore, a client/server web application was developed and published for real-time usage with Flask. Here you can test the models yourself on video or webcam and view information about the respective architectures. A highly compressed demo version of the website, which does not have the necessary computing power or all the functionalities, can be accessed at the following link:: https://appservice-qua4gx7acq-ey.a.run.app/ </br>
 
 To simulate the web application or test the models individually on your local computer without having to do the training yourself, you need to download the checkpoints of the models. The checkpoints of the respective models allow Pytorch to initialize the models with the pre-trained weights without training. To do this, please download the folder provided with this link, unzip it and place the " Checkpoints" folder inside the "training" folder: https://drive.google.com/file/d/1oE8qyF7ntrs-ZDIPV5KJc2Ur9SaL7lyy/view?usp=sharing
