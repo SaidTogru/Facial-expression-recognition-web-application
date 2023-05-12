@@ -2,6 +2,8 @@
 
 The following project was developed as part of my bachelor's thesis. The project implements, trains and evaluates the four best performing Convolutional Neural Networks architectures for the databases RAF-DB, AffectNet and FERG. For more information of different architectures and their accuracy ranking in the Facial Expression Recognition domain, see paperswithcode: https://paperswithcode.com/task/facial-expression-recognition
 
+**Demo video: https://www.youtube.com/watch?v=FnTKn2sGNNk**
+
 # Papers and Architectures
 
 The following paper implementations were used as part of this research:
@@ -28,8 +30,6 @@ FER2013: https://www.kaggle.com/c/challenges-in-representation-learning-facial-e
 # Client Server Application
 
 ![pagescrenn](https://user-images.githubusercontent.com/65668541/175617298-a57c6cb2-45a4-4541-9711-caf250278493.PNG)
-
-Demo video: https://www.youtube.com/watch?v=FnTKn2sGNNk
 
 Furthermore, a client/server web application was developed and published for real-time usage with Flask. Here you can test the models yourself on video or webcam and view information about the respective architectures. A highly compressed demo version of the website, which does not have the necessary computing power or all the functionalities, can be accessed at the following link: https://appservice-qua4gx7acq-ey.a.run.app/ </br>
 
